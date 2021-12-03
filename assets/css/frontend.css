@@ -1,0 +1,307 @@
+.switch_box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 100px;
+	min-width: 50px;
+	height: 50px;
+
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+/* Switch 1 Specific Styles Start */
+
+
+input[type="checkbox"].switch_1{
+	font-size: 20px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+	width: 3.5em;
+	height: 1.5em;
+	background: #ddd;
+	border-radius: 3em;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+input[type="checkbox"].switch_1:after{
+	position: absolute;
+	content: "";
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	background: #fff;
+
+	-webkit-transform: scale(.7);
+			transform: scale(.7);
+	left: 0;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+input[type="checkbox"].switch_1:checked:after{
+	left: calc(100% - 1.5em);
+}
+
+input[type='checkbox'].switch_1:checked {
+    background-color: #f91942 !important;
+}
+
+.radios label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    line-height: 24px;
+    font-size: 16px;
+}
+.radios.in-row label {
+    margin-top: 9px;
+}
+.radios label:before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background-color: #fff;
+    border: 2px solid #d0d0d0;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+}
+.radios input[type=radio] {
+    display: none;
+}
+.radios label:before {
+    content: "\f00c";
+}
+.radios label:hover:before {
+    content: "\f00c";
+    color: #c9c9c9;
+}
+.radios input[type=radio]:checked + label:before {
+    background-color: #f91942;
+    border-color: #f91942;
+}
+.radios input[type=radio]:checked + label:hover:before {
+    color: #fff;
+}
+
+.border-0 {
+	border: 0!important;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #ebedf3;
+  border-radius: .42rem;
+}
+
+.card>hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 2.25rem;
+}
+
+.card-title {
+  margin-bottom: 2rem;
+}
+
+.card-subtitle {
+  margin-top: -1rem;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link:hover {
+  text-decoration: none;
+}
+
+.card-link+.card-link {
+  margin-left: 2.25rem;
+}
+
+.card-header {
+  padding: 2rem 2.25rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ebedf3;
+}
+
+.card-header:first-child {
+  border-radius: calc(.42rem - 1px) calc(.42rem - 1px) 0 0;
+}
+
+.card-footer {
+  padding: 2rem 2.25rem;
+  background-color: #fff;
+  border-top: 1px solid #ebedf3;
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 calc(.42rem - 1px) calc(.42rem - 1px);
+}
+
+.card.card-custom {
+  -webkit-box-shadow: 0 0 30px 0 rgba(82,63,105,.05);
+  box-shadow: 0 0 30px 0 rgba(82,63,105,.05);
+  border: 0;
+}
+
+.card.card-custom>.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+
+.card.card-custom>.card-header .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: .5rem;
+  margin-left: 0;
+}
+
+.card.card-custom>.card-header .card-title .card-icon {
+  margin-right: .75rem;
+  line-height: 0;
+}
+
+.card.card-custom>.card-header .card-title .card-icon i {
+  font-size: 1.25rem;
+  color: #7e8299;
+  line-height: 0;
+}
+
+.card.card-custom>.card-header .card-title,.card.card-custom>.card-header .card-title .card-label {
+  font-weight: 500;
+  font-size: 1.9rem;
+  color: #181c32;
+}
+
+.card.card-custom>.card-header .card-title .card-label {
+  margin: 0 .75rem 0 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.card.card-custom>.card-body {
+  padding: 2rem 2.25rem;
+}
+
+.card.card-custom>.card-footer {
+  background-color: transparent;
+}
+
+.card.card-custom.card-stretch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch!important;
+  -ms-flex-align: stretch!important;
+  align-items: stretch!important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card.card-custom.card-stretch.gutter-b {
+  height: calc(100% - 25px);
+}
+
+.card.card-custom.card-stretch.card-stretch-half {
+  height: 50%;
+}
+
+.card.card-custom.card-stretch.card-stretch-half.gutter-b {
+  height: calc(50% - 25px);
+}
+
+.card.card-custom.card-stretch.card-stretch-third {
+  height: 33.33%;
+}
+
+.card.card-custom.card-stretch.card-stretch-third.gutter-b {
+  height: calc(33.33% - 25px);
+}
+
+.card.card-custom.card-stretch.card-stretch-fourth {
+  height: 25%;
+}
+
+.card.card-custom.card-stretch.card-stretch-fourth.gutter-b {
+  height: calc(25% - 25px);
+}
+
+@media (max-width:767.98px) {
+  .card.card-custom>.card-header:not(.flex-nowrap) {
+    min-height: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+}
+
+.dropzone._documents {
+	min-height: 350px;
+}
+.dropzone._documents .dz-message {
+	margin: 115px 0;
+}
